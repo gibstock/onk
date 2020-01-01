@@ -251,11 +251,14 @@ footer > ul li{
         text-align: center;
     }
     /* ART PAGES  */
-
+    .section-a-page .art-desc p{
+        padding: 1em 10em;
+    }
     /* FOOTER  */
     footer{
         height: 20vh;
         background: linear-gradient(0deg, lightblue, #eee);
+        
     }
     footer > ul{
         display: flex;
