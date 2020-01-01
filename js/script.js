@@ -1,5 +1,6 @@
 const sideNav = document.querySelector('.side-nav');
 const mobileMenu = document.querySelector('.mobile-menu');
+const img = document.querySelectorAll('img');
 
 
 function toggleMenu(){
@@ -11,6 +12,10 @@ function toggleMenu(){
         mobileMenu.style.opacity = '0';
     }
 }
+// function picLink(e){
+//     alert('hi');
+// }
 
 sideNav.addEventListener('click', toggleMenu);
+// picture.addEventListener('click', picLink);
 

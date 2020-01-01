@@ -108,7 +108,7 @@ header{
 .art-desc > a{
     margin-bottom: 1em;
 }
-picture img{
+img{
     max-width: 100%;
     width: 100%;
 }
@@ -169,18 +169,18 @@ footer > ul li{
         gap: 1em;
     }
     
-    picture img{
+    a > img{
         max-width: 100%;
         width: 100%;
     }
-    .section-a picture{
+    .section-a a{
         grid-column: 2/3;
     }
     .section-a > .art-desc{
         grid-column: 3/4;
         align-self: center;
     }
-    .section-b picture{
+    .section-b a{
         grid-column: 3/4;
     }
     .section-b > .art-desc{
