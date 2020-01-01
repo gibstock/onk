@@ -100,7 +100,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .art-desc > h1{
     font-size: 1.5em;
@@ -143,8 +143,20 @@ footer > ul li{
     grid-column: 1/3;
     grid-row: 3/4;
 }
+.desk{
+    display: none;
+}
+.mobile{
+    display: inherit;
+}
 /* DESKTOP  */
 @media screen and (min-width: 768px){
+    .mobile{
+        display:none;
+    }
+    .desk{
+        display: inherit;
+    }
     
     body{
         background: #eee;
@@ -167,6 +179,9 @@ footer > ul li{
         font-size: 3em;
         letter-spacing: 1em;
         color: #fff;
+    }
+    .banner > h3:hover{
+        cursor: pointer;
     }
     .side-nav{
         display: none;
@@ -226,6 +241,9 @@ footer > ul li{
     .section-c > .art-desc{
         grid-column: 3/4;
         align-self: center;
+    }
+    .art-desc{
+        align-items: center;
     }
     .art-desc > p{
         font-size: 1.17em;
