@@ -100,7 +100,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 .art-desc > h1{
     font-size: 1.5em;
@@ -192,6 +192,7 @@ footer > ul li{
     }
     .section-a a{
         grid-column: 2/3;
+        align-self: center;
     }
     
     .section-a > .art-desc{
@@ -217,6 +218,7 @@ footer > ul li{
     .art-desc > p{
         font-size: 1.17em;
         line-height: 1.5em;
+        text-align: center;
     }
     
     footer{
