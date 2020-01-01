@@ -143,6 +143,7 @@ footer > ul li{
     grid-column: 1/3;
     grid-row: 3/4;
 }
+/* DESKTOP  */
 @media screen and (min-width: 768px){
     
     body{
@@ -173,16 +174,19 @@ footer > ul li{
     .mobile-artist{
         display: none;
     }
+    /* MAIN CONTENT  */
     .section-c,
     .section-b,
-    .section-a{
+    .section-a,
+    .section-a-page{
         display: grid;
         grid-template-columns: 1fr 5fr 5fr 1fr;
         gap: 1em;
     }
     .section-c > .art-desc,
     .section-b > .art-desc,
-    .section-a > .art-desc{
+    .section-a > .art-desc,
+    .section-a-page > .art-desc{
         border: .5px solid black;
     }
     
@@ -198,6 +202,14 @@ footer > ul li{
     .section-a > .art-desc{
         grid-column: 3/4;
         align-self: center;
+    }
+    .section-a-page a{
+        grid-column: 2/4;
+        align-self: center;
+    }
+    .section-a-page .art-desc{
+        grid-column: 2/4;
+        grid-row: 2/3;
     }
     .section-b a{
         grid-column: 3/4;
@@ -220,7 +232,9 @@ footer > ul li{
         line-height: 1.5em;
         text-align: center;
     }
-    
+    /* ART PAGES  */
+
+    /* FOOTER  */
     footer{
         height: 20vh;
         background: linear-gradient(0deg, lightblue, #eee);
