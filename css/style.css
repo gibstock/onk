@@ -141,13 +141,17 @@ footer > ul li{
 }
 #onk-footer{
     grid-column: 1/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
 }
 .desk{
     display: none;
 }
 .mobile{
     display: inherit;
+}
+.contact{
+    width: 30%;
+    align-self: center;
 }
 /* DESKTOP  */
 @media screen and (min-width: 768px){
@@ -253,6 +257,10 @@ footer > ul li{
     /* ART PAGES  */
     .section-a-page .art-desc p{
         padding: 1em 10em;
+    }
+    .contact{
+        width: 40%;
+        align-self: center;
     }
     /* FOOTER  */
     footer{
