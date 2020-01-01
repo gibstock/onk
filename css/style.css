@@ -83,6 +83,7 @@ header{
     width: 100%;
     height: 50vh;
 }
+.section-c,
 .section-b,
 .section-a{
     display: flex;
@@ -96,14 +97,24 @@ header{
 }
 .art-desc{
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 .art-desc > h1{
-    font-size: 1.1em;
-    margin-bottom: .6em;
+    font-size: 1.5em;
+}
+.art-desc > h2{
+    font-size: 1.17em;
+    font-weight: 100;
+    margin-bottom: .5em;
+}
+.art-desc > h3{
+    font-weight: 100;
 }
 .art-desc > p{
     font-size: 1em;
-    margin-bottom: .6em;
 }
 .art-desc > a{
     margin-bottom: 1em;
@@ -162,11 +173,17 @@ footer > ul li{
     .mobile-artist{
         display: none;
     }
+    .section-c,
     .section-b,
     .section-a{
         display: grid;
         grid-template-columns: 1fr 5fr 5fr 1fr;
         gap: 1em;
+    }
+    .section-c > .art-desc,
+    .section-b > .art-desc,
+    .section-a > .art-desc{
+        border: .5px solid black;
     }
     
     a > img{
@@ -176,6 +193,7 @@ footer > ul li{
     .section-a a{
         grid-column: 2/3;
     }
+    
     .section-a > .art-desc{
         grid-column: 3/4;
         align-self: center;
@@ -189,9 +207,15 @@ footer > ul li{
         align-self: center;
     
     }
+    .section-c a{
+        grid-column: 2/3;
+    }
+    .section-c > .art-desc{
+        grid-column: 3/4;
+        align-self: center;
+    }
     .art-desc > p{
-        font-size: 1.5em;
-        padding: 1em 0;
+        font-size: 1.17em;
         line-height: 1.5em;
     }
     
