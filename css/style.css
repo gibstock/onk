@@ -346,7 +346,6 @@ footer > ul li{
     }
     /* FOOTER  */
     footer{
-        height: 20vh;
         background: linear-gradient(0deg, lightblue, #eee);
         
     }
