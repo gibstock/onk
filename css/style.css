@@ -188,7 +188,7 @@ footer > ul li{
     align-self: center;
 }
 .mobile-artist{
-    display: none;
+    /* display: none; */
 }
 /* DESKTOP  */
 @media screen and (min-width: 768px){
@@ -254,6 +254,19 @@ footer > ul li{
     a > img{
         max-width: 100%;
         width: 100%;
+    }
+    .date{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        
+    }
+    .date > h1{
+        grid-column: 2/4;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        color: #aaa;
     }
     .section-a a{
         grid-column: 2/3;
