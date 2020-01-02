@@ -37,7 +37,7 @@ header{
     border-radius: 50%;
     height: .2em;
     width: .2em;
-    justify-self: center;
+    justify-self: flex-start;
     align-self: center;
     position: relative;
 }
@@ -187,6 +187,9 @@ footer > ul li{
 .contact{
     width: 30%;
     align-self: center;
+}
+.mobile-artist{
+    display: none;
 }
 /* DESKTOP  */
 @media screen and (min-width: 768px){
