@@ -160,6 +160,8 @@ footer > ul li{
     }
     .desk{
         display: inherit;
+        width: 50%;
+        
     }
     
     body{
@@ -201,12 +203,15 @@ footer > ul li{
         display: grid;
         grid-template-columns: 1fr 5fr 5fr 1fr;
         gap: 1em;
+        margin-bottom: 1em;
     }
     .section-c > .art-desc,
     .section-b > .art-desc,
     .section-a > .art-desc,
     .section-a-page > .art-desc{
         border: .5px solid black;
+        height: 100%;
+        width: 100%;
     }
     
     a > img{
@@ -225,6 +230,8 @@ footer > ul li{
     .section-a-page a{
         grid-column: 2/4;
         align-self: center;
+        display: flex;
+        justify-content: center;
     }
     .section-a-page .art-desc{
         grid-column: 2/4;
@@ -255,12 +262,50 @@ footer > ul li{
         text-align: center;
     }
     /* ART PAGES  */
+    .section-a-page{
+        position: relative;
+    }
     .section-a-page .art-desc p{
         padding: 1em 10em;
     }
     .contact{
         width: 40%;
         align-self: center;
+    }
+    /* fullscreen images  */
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s;
+        width: 100%;
+        height: 100%;
+    }
+    .overlay img{
+        max-width: 99%;
+        max-height: 99%;
+        width: auto;
+        height: auto;
+        transform: scale(.95);
+        transition: scale 1s;
+
+    }
+    .overlay:target{
+        visibility: visible;
+        outline: none;
+        cursor: default;
+        opacity: 1;
+
+    }
+    .overlay:target img{
+        transform: scale(1);
     }
     /* FOOTER  */
     footer{
@@ -279,5 +324,11 @@ footer > ul li{
     footer > ul li{
         list-style: none;
         font-size: 1.4em;
+    }
+}
+/* landscape orientation */
+@media screen and (orientation: landscape){
+    img{
+        object-fit: contain;
     }
 }
