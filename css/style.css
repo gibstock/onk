@@ -83,6 +83,9 @@ header{
     width: 100%;
     height: 50vh;
 }
+.date > h1{
+    text-align: center;
+}
 .section-c,
 .section-b,
 .section-a{
