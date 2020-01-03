@@ -447,6 +447,22 @@ form{
     .floating-artist h1:hover{
         cursor: pointer;
     }
+    .artist-list ul li a{
+        color: #333;
+    }
+    .artist-list ul li{
+        padding: .5em 0;
+    }
+    .contacts{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .artist-list ul li .contacts li a{
+        padding-right: 5px;
+        color: #555;
+        font-size: 1em;
+    }
 }
 /* landscape orientation */
 @media screen and (orientation: landscape){
