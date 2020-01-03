@@ -3,9 +3,11 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const img = document.querySelectorAll('img');
 const banner = document.querySelector('.banner');
 const logo = banner.querySelector('h3');
-const artistMenu = document.querySelector('.floating-artist');
-const artBtn = artistMenu.querySelector('h1');
-const menuUl = artistMenu.querySelector('ul');
+if(document.querySelector('.floating-artist') !== null){
+    const artistMenu = document.querySelector('.floating-artist');
+    const artBtn = artistMenu.querySelector('h1');
+    const menuUl = artistMenu.querySelector('ul');
+}
 
 
 function goHome(){
