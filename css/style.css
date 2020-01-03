@@ -193,8 +193,23 @@ footer > ul li{
 .mobile-artist{
     /* display: none; */
 }
+.subscribe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.1em;
+}
+form{
+    grid-column: 1/4;
+    background: linear-gradient(45deg, #eee, lightblue);
+    border-radius: 12px;
+    padding: 1em;
+
+}
 /* DESKTOP  */
 @media screen and (min-width: 768px){
+    form{
+        grid-column: 2/3;
+    }
     .mobile{
         display:none;
     }
