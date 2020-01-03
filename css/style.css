@@ -237,6 +237,9 @@ form{
 .site-info > ul li{
     list-style: none;
 }
+.floating-artist{
+    display: none;
+}
 /* DESKTOP  */
 @media screen and (min-width: 768px){
     .artist-list{
