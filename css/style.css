@@ -439,6 +439,7 @@ form{
         background: linear-gradient(45deg, #eee, lightblue);
     }
     .floating-artist{
+        display: inherit;
         position: fixed;
         margin-left: 30px;
         padding-left: 30px;
