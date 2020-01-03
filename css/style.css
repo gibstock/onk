@@ -235,6 +235,14 @@ form{
 .site-info > ul li{
     list-style: none;
 }
+.site-info > ul li a{
+    text-decoration: line-through;
+    text-decoration-color: lightblue;
+    padding-right: .5em;
+}
+.site-info > ul li a::after{
+    content: '(working on it)';
+}
 .floating-artist{
     display: none;
 }
