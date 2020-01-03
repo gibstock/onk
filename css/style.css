@@ -163,6 +163,7 @@ img{
 }
 footer{
     background: linear-gradient(0deg, lightblue, #fff);
+    border-radius: 12px;
 }
 footer > ul{
     display: grid;
@@ -198,17 +199,40 @@ footer > ul li{
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 1.1em;
 }
+.artist-list{
+    grid-column: 1/4;
+    background: linear-gradient(45deg, #eee, lightblue);
+    border-radius: 12px;
+    padding: 1em;
+}
+.artist-list > ul li{
+    list-style: none;
+}
 form{
     grid-column: 1/4;
     background: linear-gradient(45deg, #eee, lightblue);
     border-radius: 12px;
     padding: 1em;
-
+}
+.site-info{
+    grid-column: 1/4;
+    background: linear-gradient(45deg, #eee, lightblue);
+    border-radius: 12px;
+    padding: 1em;
+}
+.site-info > ul li{
+    list-style: none;
 }
 /* DESKTOP  */
 @media screen and (min-width: 768px){
+    .artist-list{
+        grid-column: 1/2;
+    }
     form{
         grid-column: 2/3;
+    }
+    .site-info{
+        grid-column: 3/4;
     }
     .mobile{
         display:none;
@@ -256,7 +280,7 @@ form{
     .section-a,
     .section-a-page{
         display: grid;
-        grid-template-columns: 1fr 5fr 5fr 1fr;
+        grid-template-columns: 2fr 3fr 3fr 2fr;
         gap: 1em;
         margin-bottom: 1em;
     }
@@ -391,6 +415,37 @@ form{
     footer > ul li{
         list-style: none;
         font-size: 1.4em;
+    }
+    .t-shirts{
+        position: fixed;
+        top: 40vh;
+        margin-left: 30px;
+        padding-left: 30px;
+        background: linear-gradient(45deg, #eee, lightblue);
+    }
+    .floating-artist{
+        position: fixed;
+        margin-left: 30px;
+        padding-left: 30px;
+        background: linear-gradient(45deg, #eee, lightblue);
+    }
+    .t-shirts ul,
+    .floating-artist ul{
+        display: none;
+    }
+    .t-shirts ul li,
+    .floating-artist ul li{
+        font-size: 1.3em;
+        list-style: none;
+        padding: 1em;
+    }
+    .t-shirts ul li a,
+    .floating-artist ul li a{
+        color: #444;
+    }
+    .t-shirts h1:hover,
+    .floating-artist h1:hover{
+        cursor: pointer;
     }
 }
 /* landscape orientation */
