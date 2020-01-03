@@ -8,7 +8,9 @@ const artBtn = artistMenu.querySelector('h1');
 const menuUl = artistMenu.querySelector('ul');
 
 
-
+function goHome(){
+    location.assign('https://www.onk.gallery');
+}
 function toggleMenu(){
     if(mobileMenu.style.display === '' || mobileMenu.style.display === 'none'){
         mobileMenu.style.display = 'inherit';
@@ -18,9 +20,7 @@ function toggleMenu(){
         mobileMenu.style.opacity = '0';
     }
 }
-function goHome(){
-    location.assign('https://www.onk.gallery');
-}
+
 function artListMenu(){
     if(menuUl.style.display === '' || menuUl.style.display === 'none'){
         menuUl.style.display = 'inherit';

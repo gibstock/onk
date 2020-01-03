@@ -191,9 +191,7 @@ footer > ul li{
     width: 30%;
     align-self: center;
 }
-.mobile-artist{
-    /* display: none; */
-}
+
 .contacts{
     display: flex;
 
