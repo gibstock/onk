@@ -194,6 +194,16 @@ footer > ul li{
 .mobile-artist{
     /* display: none; */
 }
+.contacts{
+    display: flex;
+
+}
+.contacts li{
+    padding-right: .5em;
+}
+.artist-list ul li .contacts li a{
+    color: #666;
+}
 .subscribe{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -207,6 +217,10 @@ footer > ul li{
 }
 .artist-list > ul li{
     list-style: none;
+    padding-bottom: .5em;
+}
+.artist-list ul li a{
+    color: #222;
 }
 form{
     grid-column: 1/4;
