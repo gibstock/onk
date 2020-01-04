@@ -18,6 +18,24 @@ header{
     position: sticky;
     top: 0;
 }
+button{
+    background: linear-gradient(45deg, #eee, lightblue, rgb(82, 123, 238), rgb(224, 235, 238));
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 4px 4px #fff;
+}
+button h2{
+    padding: .3em;
+}
+.text-form{
+    padding: .5em;
+    border-radius: 12px;
+    border: none;
+
+}
+#art-lover{
+    font-size: 1.3em;
+}
 .banner{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -245,6 +263,13 @@ form{
 .floating-artist{
     display: none;
 }
+.section-c a img,
+    .section-b a img,
+    .section-a a img{
+        border: 15px groove;
+        border-color: rgb(0, 0, 0);
+        padding: .2em;
+    }
 /* DESKTOP  */
 @media screen and (min-width: 768px){
     .artist-list{
@@ -297,6 +322,13 @@ form{
         display: none;
     }
     /* MAIN CONTENT  */
+    .section-c a img,
+    .section-b a img,
+    .section-a a img{
+        border: 15px groove;
+        border-color: rgb(0, 0, 0);
+        padding: .2em;
+    }
     .section-c,
     .section-b,
     .section-a,
