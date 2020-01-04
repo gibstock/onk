@@ -266,7 +266,7 @@ form{
 .section-c a img,
     .section-b a img,
     .section-a a img{
-        border: 15px groove;
+        border: 5px groove;
         border-color: rgb(0, 0, 0);
         padding: .2em;
     }
