@@ -22,7 +22,7 @@ button{
     background: linear-gradient(45deg, #eee, lightblue, rgb(82, 123, 238), rgb(224, 235, 238));
     border-radius: 12px;
     border: none;
-    box-shadow: 0 0 4px 4px #fff;
+    box-shadow: -7px -7px 15px 0px #fff, 7px 7px 15px 0px black;
 }
 button h2{
     padding: .3em;
@@ -138,7 +138,13 @@ button h2{
     font-size: 1em;
 }
 .art-desc > a{
-    margin-bottom: 1em;
+    color: #222;
+    margin: 1em;
+    background: linear-gradient(45deg, #eee, lightblue, rgb(82, 123, 238), rgb(224, 235, 238));
+    border-radius: 12px;
+    padding: .5em;
+    border: none;
+    box-shadow: -7px -7px 30px 0px #fff, 7px 7px 30px 0px black;
 }
 img{
     max-width: 100%;
@@ -263,12 +269,13 @@ form{
 .floating-artist{
     display: none;
 }
-.section-c a img,
+    .section-c a img,
     .section-b a img,
     .section-a a img{
-        border: 5px groove;
+        /* border: 5px groove;
         border-color: rgb(0, 0, 0);
-        padding: .2em;
+        padding: .2em; */
+
     }
 /* DESKTOP  */
 @media screen and (min-width: 768px){
@@ -310,7 +317,7 @@ form{
         align-self: center;
         font-size: 3em;
         letter-spacing: 1em;
-        color: #fff;
+        color: #2747A1;
     }
     .banner > h3:hover{
         cursor: pointer;
@@ -350,6 +357,8 @@ form{
     a > img{
         max-width: 100%;
         width: 100%;
+        border: 15px groove #000;
+        padding: .2em;
     }
     .date{
         display: grid;
@@ -362,11 +371,12 @@ form{
         align-self: center;
         justify-self: center;
         text-align: center;
-        color: #aaa;
+        color: #7096FF;
     }
     .section-a a{
         grid-column: 2/3;
         align-self: center;
+        text-align: center;
     }
     
     .section-a > .art-desc{
