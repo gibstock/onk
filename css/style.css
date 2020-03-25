@@ -27,6 +27,13 @@ button{
 button h2{
     padding: .3em;
 }
+.looker,
+.left_looker{
+    display: none;
+}
+.date{
+    display: none;
+}
 .text-form{
     padding: .5em;
     border-radius: 12px;
@@ -125,17 +132,25 @@ button h2{
 }
 .art-desc > h1{
     font-size: 1.5em;
+    font-weight: 200;
+    color: #333;
 }
 .art-desc > h2{
     font-size: 1.17em;
     font-weight: 100;
     margin-bottom: .5em;
+    color: #333;
 }
 .art-desc > h3{
     font-weight: 100;
+    color: #333;
+}
+.art-desc > h4{
+    color: #333;
 }
 .art-desc > p{
     font-size: 1em;
+    color: #333;
 }
 .art-desc > a{
     color: #222;
@@ -149,6 +164,7 @@ button h2{
 img{
     max-width: 100%;
     width: 100%;
+    padding: 1em;
 }
 /* fullscreen images  */
 .overlay{
@@ -296,14 +312,23 @@ form{
         width: 50%;
         
     }
-    
+    .left_looker{
+        width: 50%;
+        align-self: end;
+        justify-self: left;
+    }
+    .looker{
+        width: 50%;
+        align-self: end;
+        justify-self: right;
+    }
     body{
-        background: #eee;
+        background: #fff;
     }
     header{
         position: relative;
         margin-bottom: 1em;
-        background: linear-gradient(180deg, lightblue, #eee);
+        background: linear-gradient(77deg, lightblue, #eee, #fff,#eee,lightblue);
 
     }
     .banner{
@@ -332,9 +357,9 @@ form{
     .section-c a img,
     .section-b a img,
     .section-a a img{
-        border: 15px groove;
-        border-color: rgb(0, 0, 0);
-        padding: .2em;
+        /* border: 15px groove;
+        border-color: rgb(0, 0, 0); */
+        padding: 1em;
     }
     .section-c,
     .section-b,
@@ -343,13 +368,14 @@ form{
         display: grid;
         grid-template-columns: 2fr 3fr 3fr 2fr;
         gap: 1em;
-        margin-bottom: 1em;
+        margin: 1em;
+        background: linear-gradient(160deg, #fff, lightblue, #fff, lightblue, #fff);
     }
     .section-c > .art-desc,
     .section-b > .art-desc,
     .section-a > .art-desc,
     .section-a-page > .art-desc{
-        border: .5px solid black;
+        /* border: .5px solid black; */
         height: 100%;
         width: 100%;
     }
@@ -357,11 +383,12 @@ form{
     a > img{
         max-width: 100%;
         width: 100%;
-        border: 15px groove #000;
+        /* border: 15px groove #000; */
         padding: .2em;
     }
     .date{
-        display: grid;
+
+        display: none;
         grid-template-columns: 1fr 2fr 2fr 1fr;
         
     }
